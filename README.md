@@ -1,31 +1,37 @@
-#  Emotional Intelligence System
+# Emotional Intelligence System
 
 ## Overview
-This project builds a real-world emotional intelligence system that:
-- Understands user emotional state from noisy text
-- Handles uncertainty and missing signals
+A real-world AI system that:
+- Understands emotional state from messy human text
+- Handles noisy and conflicting signals
 - Recommends meaningful next actions
-- Provides timing decisions
+- Models uncertainty explicitly
 
-## Pipeline
-1. Text preprocessing (TF-IDF)
-2. Metadata features (sleep, stress, energy)
-3. Model:
-   - Emotion → Classification (XGBoost)
-   - Intensity → Regression (XGBoost)
-4. Decision Engine:
-   - Uses emotion + stress + energy + time
-5. Uncertainty modeling:
-   - Confidence threshold
-   - Uncertain flag
+---
 
-## Features Used
-- Text (journal)
-- Sleep hours
-- Stress level
-- Energy level
-- Time of day
-- Previous mood
+## System Design
+
+### 1. Emotional Understanding
+- Text + metadata fusion
+- XGBoost classifier
+
+### 2. Decision Engine
+- Action: breathing, rest, deep work, etc.
+- Timing: now, later, tonight, etc.
+
+### 3. Uncertainty Modeling
+- Confidence scores
+- Uncertain flag
+
+---
+
+## Dashboard Features
+- Multi-tab analytics
+- 3D emotional space visualization
+- Decision flow visualization
+- Real-time prediction
+
+---
 
 ## How to Run
 
